@@ -1,3 +1,4 @@
+
 document.getElementById('splitButton').addEventListener('click', function () {
     const inputSentence = document.getElementById('inputSentence').value;
     const output = document.getElementById('output');
@@ -58,3 +59,19 @@ function splitSentence(sentence) {
 
     return uniqueWords;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
