@@ -22,7 +22,8 @@ h1 {
     margin-bottom: 20px;
 }
 
-input[type="text"] {
+input[type="text"],
+textarea {
     width: 100%;
     padding: 10px 15px;
     box-sizing: border-box;
@@ -30,12 +31,13 @@ input[type="text"] {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    resize: vertical;
 }
 
 button {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #3d75b3;
     color: #ffffff;
     font-size: 16px;
     border: none;
@@ -45,11 +47,11 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #2f5d91;
 }
 
 button:active {
-    background-color: #003d80;
+    background-color: #244879;
 }
 
 #output {
@@ -61,7 +63,7 @@ button:active {
 
 #output span {
     padding: 5px 10px;
-    background-color: #007bff;
+    background-color: #3d75b3;
     color: #ffffff;
     border-radius: 5px;
 }
@@ -78,35 +80,4 @@ footer {
     color: #666;
     margin-top: auto;
     padding: 20px 0;
-}
-
-
-@keyframes animatedBackground {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-.animated-gradient {
-    background: linear-gradient(45deg, #3f87a6, #ebf8e1, #f69d3c);
-    background-size: 600% 600%;
-    animation: animatedBackground 15s ease infinite;
-}
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-body.animated-gradient {
-    animation: animatedBackground 15s ease infinite;
 }
